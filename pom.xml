@@ -5,6 +5,11 @@
   <groupId>dssp</groupId>
   <artifactId>brailleLib</artifactId>
   <version>1.7.0</version>
+
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <finalName>${artifactId}</finalName>

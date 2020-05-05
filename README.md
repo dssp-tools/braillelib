@@ -2,7 +2,7 @@
 
 braillelibは点図作成ソフト「橋立」で使用するライブラリです。
 
-# ビルド手順
+## ビルド手順
 必要なソフトウェア
 * maven
 
@@ -13,9 +13,9 @@ braillelibは点図作成ソフト「橋立」で使用するライブラリで�
 * targetにbraileLib.jarが生成されます
 * braileLib.jarはローカルのmavenリポジトリに登録されます
 
-# ライセンス
+## ライセンス
 [ライセンス](Lisense.txt)
 
 
-# リンク
+## リンク
 [障害学生支援プロジェクト Disabled-student Study Support Project(DSSP)](http://dssp.sakura.ne.jp/)
