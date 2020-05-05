@@ -19,3 +19,5 @@ braillelibは点図作成ソフト「橋立」で使用するライブラリで�
 
 ## リンク
 [障害学生支援プロジェクト Disabled-student Study Support Project(DSSP)](http://dssp.sakura.ne.jp/)
+
+[hashidate](https://github.com/dssp-tools/hashidate)
