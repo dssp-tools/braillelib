@@ -104,7 +104,7 @@ public class BrailleInfo implements Cloneable {
     public static final int MAX_DOT_COUNT = 6;
 
     /**
-    * 行列、表の位置情報<br/>
+    * 行列、表の位置情報<br>
     * ・宣言の順に開始と終了とをチェックするので、順場を変えてはいけない
     *
     * @author yagi
@@ -147,29 +147,29 @@ public class BrailleInfo implements Cloneable {
     */
     public static enum TABLE_OPTION {
         /**
-        * 結合する列数<br/>
+        * 結合する列数<br>
         * ・情報は整数
         * ・CELL_STARTの場合のみ有効
         */
         ROWSPAN("rowspan"),
         /**
-        * 結合する行数<br/>
+        * 結合する行数<br>
         * ・情報は整数
         * ・CELL_STARTの場合のみ有効
         */
         COLUMNSPAN("columnspan"),
         /**
-        * 枠線の種類<br/>
+        * 枠線の種類<br>
         * ・情報は文字列
         */
         FRAME("frame"),
         /**
-        * 行間罫線の種類<br/>
+        * 行間罫線の種類<br>
         * ・情報は文字列
         */
         ROWLINES("rowlines"),
         /**
-        * 列間罫線の種類<br/>
+        * 列間罫線の種類<br>
         * ・情報は文字列
         */
         COLUMNLINES("columnlines");
@@ -404,7 +404,7 @@ public class BrailleInfo implements Cloneable {
     /**
     * 辞書を取得する
     *
-    * @return
+    * @return BrailleDict
     */
     public BrailleDict getDict() {
         return dict;
@@ -431,7 +431,7 @@ public class BrailleInfo implements Cloneable {
     /**
     * TYPEを取得する
     *
-    * @return
+    * @return TYPE
     */
     public TYPE getType() {
         return type;
@@ -440,7 +440,7 @@ public class BrailleInfo implements Cloneable {
     /**
     * TYPEを設定する
     *
-    * @param type
+    * @param type TYPE
     */
     public void setType(TYPE type) {
         this.type = type;
@@ -477,7 +477,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * マスの数を取得する<br/>
+    * マスの数を取得する<br>
     *
     * ・外字符、大文字符などの符号は含まない
     *
@@ -502,7 +502,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * マスを追加する<br/>
+    * マスを追加する<br>
     *
     * ・マスの番号に-1を指定して、addDotListを呼ぶ
     *
@@ -514,7 +514,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * 番号を指定してマスを追加する<br/>
+    * 番号を指定してマスを追加する<br>
     *
     * ・指定した番号以後にマスがある場合は右に移動する
     *
@@ -571,7 +571,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * マスを左に移動する<br/>
+    * マスを左に移動する<br>
     * ・indexが1より小さいか、マスの数以上の場合は何もしない
     *
     * @param index マスの番号(0から始まる)
@@ -589,7 +589,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * マスを右に移動する<br/>
+    * マスを右に移動する<br>
     * ・indexが負か、(マスの数-1)以上の場合は何もしない
     *
     * @param index マスの番号(0から始まる)
@@ -649,7 +649,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * 外字符、大文字符などの符号かどうかを取得する<br/>
+    * 外字符、大文字符などの符号かどうかを取得する<br>
     *
     * @return true=符号 false=符号ではない
     */
@@ -664,7 +664,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * 外字符、大文字符などの符号かどうかを取得する<br/>
+    * 外字符、大文字符などの符号かどうかを取得する<br>
     *
     * @param extra 確かめる符号
     * @return true=符号 false=符号ではない
@@ -674,7 +674,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * 行列や表のオプション情報を設定する<br/>
+    * 行列や表のオプション情報を設定する<br>
     * ・オプション情報は{@code TABLE_OPTION}
     *
     * @param mark 位置情報
@@ -709,7 +709,7 @@ public class BrailleInfo implements Cloneable {
     }
 
     /**
-    * 行列や表のオプション情報を取得するKbr/>
+    * 行列や表のオプション情報を取得する
     *
     * @param key 情報の種類
     * @return 情報(ない場合はnullか0)
@@ -761,7 +761,7 @@ public class BrailleInfo implements Cloneable {
     /**
     * 改行文字の設定を取得する
     *
-    * @return true=改行文字<br/>改行文字ではない
+    * @return true=改行文字<br>改行文字ではない
     */
     public boolean isLineBreak() {
         return (this == BrailleInfo.LINEBREAK);
@@ -800,7 +800,7 @@ public class BrailleInfo implements Cloneable {
     * この字の前後に数式の区切り符号の確認が必要かを取得する
     *
     * @param check PRECHECK=前 POSTCHECK=後
-    * @return
+    * @return true/false
     */
     public boolean needCheck(CHECK check) {
         Boolean flag = this.checkMap.get(check);

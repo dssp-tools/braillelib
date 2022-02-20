@@ -219,10 +219,10 @@ public final class Util {
     // List、Stack、Queueなどの生成
 
     /**
-    * Queueを生成する<br/>
+    * Queueを生成する<br>
     *
-    * ・ArrayDequeを生成する<br/>
-    * [使用例]<br/>
+    * ・ArrayDequeを生成する<br>
+    * [使用例]<br>
     * {@code Queue<String> stack = Util.newQueue();}
     *
     * @return Stack
@@ -232,9 +232,9 @@ public final class Util {
     }
 
     /**
-    * Stackを生成する<br/>
+    * Stackを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Stack<String> stack = Util.newStack();}
     *
     * @return Stack
@@ -244,9 +244,9 @@ public final class Util {
     }
 
     /**
-    * Vectorを生成する<br/>
+    * Vectorを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Vector<String> vector = Util.newVector();}
     *
     * @return Vector
@@ -256,9 +256,9 @@ public final class Util {
     }
 
     /**
-    * ArrayListを生成する<br/>
+    * ArrayListを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code List<String> list = Util.newArrayList();}
     *
     * @return ArrayList
@@ -268,9 +268,9 @@ public final class Util {
     }
 
     /**
-    * ArrayListを複製する<br/>
+    * ArrayListを複製する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code List<String> list = Util.newArrayList();}
     *
     * @param src
@@ -281,9 +281,9 @@ public final class Util {
     }
 
     /**
-    * TreeSetを生成する<br/>
+    * TreeSetを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Set<String> set = Util.newTreeSet();}
     *
     * @param comp 要素を比較するComparator
@@ -294,9 +294,9 @@ public final class Util {
     }
 
     /**
-    * TreeSetを生成する<br/>
+    * TreeSetを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Set<String> set = Util.newTreeSet();}
     *
     * @return TreeSet
@@ -306,9 +306,9 @@ public final class Util {
     }
 
     /**
-    * Hashtableを生成する<br/>
+    * Hashtableを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Map<String, String> map = Util.newHashtable();}
     *
     * @return Hashtable
@@ -318,9 +318,9 @@ public final class Util {
     }
 
     /**
-    * HashMapを生成する<br/>
+    * HashMapを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Map<String, String> map = Util.newHashMap();}
     *
     * @return HashMap
@@ -330,9 +330,9 @@ public final class Util {
     }
 
     /**
-    * TreeMapを生成する<br/>
+    * TreeMapを生成する<br>
     *
-    * [使用例]<br/>
+    * [使用例]<br>
     * {@code Map<String, String> map = Util.newTreeMap();}
     *
     * @return TreeMap
@@ -344,7 +344,7 @@ public final class Util {
     // 表示関係
 
     /**
-    * 画面の解像度を取得する<br/>
+    * 画面の解像度を取得する<br>
     *
     * @return 解像度(DPI)
     */
@@ -353,8 +353,8 @@ public final class Util {
     }
 
     /**
-    * コンポーネントの位置を設定する<br/>
-    * ・マウスの位置にコンポーネントの中心を置く<br/>
+    * コンポーネントの位置を設定する<br>
+    * ・マウスの位置にコンポーネントの中心を置く<br>
     * ・画面の外にはみ出すようなら、画面際に置く
     *
     * @param obj コンポーネント
@@ -375,7 +375,7 @@ public final class Util {
     }
 
     /**
-    * 実寸を画素値に変換する<br/>
+    * 実寸を画素値に変換する<br>
     * ・解像度に0以下を指定すると、現在の画面の解像度を使用する
     *
     * @param dpi 解像度(DPI)
@@ -390,7 +390,7 @@ public final class Util {
     }
 
     /**
-    * 画素値を実寸に変換する<br/>
+    * 画素値を実寸に変換する<br>
     * ・解像度に0以下を指定すると、現在の画面の解像度を使用する
     *
     * @param dpi 解像度(DPI)
@@ -406,7 +406,7 @@ public final class Util {
     }
 
     /**
-    * 異なる解像度の画素値に変換する<br/>
+    * 異なる解像度の画素値に変換する<br>
     * ・解像度に0以下を指定すると、現在の画面の解像度を使用する
     *
     * @param srcDpi 変換前の解像度(DPI)
@@ -431,8 +431,8 @@ public final class Util {
     }
 
     /**
-    * 文字列からColorを生成する<br/>
-    * [文字列の型式]<br/>
+    * 文字列からColorを生成する<br>
+    * [文字列の型式]<br>
     * RRGGBB または #RRGGBB
     *
     * @param text 文字列
@@ -459,7 +459,7 @@ public final class Util {
 
     /**
     * Colorの文字列を生成する
-    * [文字列の型式]<br/>
+    * [文字列の型式]<br>
     * RRGGBB
     *
     * @param color
@@ -475,12 +475,12 @@ public final class Util {
     // 配列の深い複製
 
     /**
-    * 配列の深い複製<br/>
+    * 配列の深い複製<br>
     *
-    * ・各要素のコピーコンストラクタを呼び出して複製する<br/>
-    * 　{@code deepCopy(Arrays.asList(src), Arrays.asList(dst))}と同じ<br/>
-    * ・複製元と複製先との長さが異なる場合は、短い方の要素まで複製する<br/>
-    * ・例外が発生したらlogExceptionを使ってログに出力する<br/>
+    * ・各要素のコピーコンストラクタを呼び出して複製する<br>
+    * 　{@code deepCopy(Arrays.asList(src), Arrays.asList(dst))}と同じ<br>
+    * ・複製元と複製先との長さが異なる場合は、短い方の要素まで複製する<br>
+    * ・例外が発生したらlogExceptionを使ってログに出力する<br>
     *
     * @param src 複製元
     * @param dst 複製先
@@ -492,10 +492,10 @@ public final class Util {
     }
 
     /**
-    * Collectionの深い複製<br/>
+    * Collectionの深い複製<br>
     *
-    * ・各要素のコピーコンストラクタで複製する<br/>
-    * ・複製元の長さが0の場合は、複製先がクリアされる<br/>
+    * ・各要素のコピーコンストラクタで複製する<br>
+    * ・複製元の長さが0の場合は、複製先がクリアされる<br>
     * ・例外が発生したらlogExceptionを使ってログに出力する
     *
     * @param src 複製元
@@ -533,11 +533,11 @@ public final class Util {
     }
 
     /**
-    * Collectionの深い複製<br/>
+    * Collectionの深い複製<br>
     *
-    * ・各要素のclone()で複製する<br/>
-    * 　{@code deepCopyByMethod("clone", Arrays.asList(src), Arrays.asList(dst))}と同じ<br/>
-    * ・複製元の長さが0の場合は、複製先がクリアされる<br/>
+    * ・各要素のclone()で複製する<br>
+    * 　{@code deepCopyByMethod("clone", Arrays.asList(src), Arrays.asList(dst))}と同じ<br>
+    * ・複製元の長さが0の場合は、複製先がクリアされる<br>
     * ・例外が発生したらlogExceptionを使ってログに出力する
     *
     * @param src 複製元
@@ -550,11 +550,11 @@ public final class Util {
     }
 
     /**
-    * Collectionの深い複製<br/>
+    * Collectionの深い複製<br>
     *
-    * ・指定されたメソッドで各要素を複製する<br/>
-    * 　{@code deepCopyByMethod(copy, Arrays.asList(src), Arrays.asList(dst))}と同じ<br/>
-    * ・複製元の長さが0の場合は、複製先がクリアされる<br/>
+    * ・指定されたメソッドで各要素を複製する<br>
+    * 　{@code deepCopyByMethod(copy, Arrays.asList(src), Arrays.asList(dst))}と同じ<br>
+    * ・複製元の長さが0の場合は、複製先がクリアされる<br>
     * ・例外が発生したらlogExceptionを使ってログに出力する
     *
     * @param copy 複製に使う引数なし、返り値がTのメソッド名
@@ -591,11 +591,11 @@ public final class Util {
     }
 
     /**
-    * Collectionの深い複製<br/>
+    * Collectionの深い複製<br>
     *
-    * ・各要素のclone()で複製する<br/>
-    * 　{@code deepCopyByMethod("clone", src, dst)}と同じ<br/>
-    * ・複製元の長さが0の場合は、複製先がクリアされる<br/>
+    * ・各要素のclone()で複製する<br>
+    * 　{@code deepCopyByMethod("clone", src, dst)}と同じ<br>
+    * ・複製元の長さが0の場合は、複製先がクリアされる<br>
     * ・例外が発生したらlogExceptionを使ってログに出力する
     *
     * @param src 複製元
@@ -608,11 +608,11 @@ public final class Util {
     }
 
     /**
-    * Collectionの深い複製<br/>
+    * Collectionの深い複製<br>
     *
-    * ・指定されたメソッドで各要素を複製する<br/>
-    * 　メソッドは返り値が複製するオブジェクトのクラスでなければならない<br/>
-    * ・複製元の長さが0の場合は、複製先がクリアされる<br/>
+    * ・指定されたメソッドで各要素を複製する<br>
+    * 　メソッドは返り値が複製するオブジェクトのクラスでなければならない<br>
+    * ・複製元の長さが0の場合は、複製先がクリアされる<br>
     * ・例外が発生したらlogExceptionを使ってログに出力する
     *
     * @param copy 複製に使う引数なし、返り値がTのメソッド名
@@ -674,7 +674,7 @@ public final class Util {
     }
 
     /**
-    * 読み取り用にファイルを開く<br/>
+    * 読み取り用にファイルを開く<br>
     * [使用例]
     * <pre>
     * FileNameExtensionFilter[] extList = {new FileNameExtensionFilter("csvファイル", "csv", "dat")};
@@ -711,7 +711,7 @@ public final class Util {
     }
 
     /**
-    * ファイルを開く<br/>
+    * ファイルを開く<br>
     * [使用例]
     * <pre>
     * FileNameExtensionFilter[] extList = {new FileNameExtensionFilter("csvファイル", "csv", "dat")};
@@ -739,6 +739,7 @@ public final class Util {
             }
             dlg.setFileFilter(extList[0]);
         }
+        dlg.setAcceptAllFileFilterUsed(true);
 
         File file = null;
         if (null != fileName) {
@@ -888,7 +889,7 @@ public final class Util {
     // ログ出力、メッセージ表示
 
     /**
-    * デバッグモードのON/OFF<br/>
+    * デバッグモードのON/OFF<br>
     *
     * ・デバッグモードではログを標準出力に出力する
     *
@@ -916,7 +917,7 @@ public final class Util {
     /**
     * 現在の日時を取得kする
     *
-    * [形式]<br/>
+    * [形式]<br>
     * YYYY-MM-DD HH24:mm:SS
     *
     * @return 日時の文字列
@@ -992,10 +993,10 @@ public final class Util {
     }
 
     /**
-    * ログを出力する<br/>
+    * ログを出力する<br>
     *
-    * ・出力できない場合は標準エラー出力に出力する<br/>
-    * [ログの形式]<br/>
+    * ・出力できない場合は標準エラー出力に出力する<br>
+    * [ログの形式]<br>
     *  日時 ログのタイプ ファイル名:行番号 メッセージ
     *
     * @param type ログのタイプ。nullの場合はLOG.INFOで出力する
@@ -1007,14 +1008,14 @@ public final class Util {
     }
 
     /**
-    * 例外のログを出力する<br/>
+    * 例外のログを出力する<br>
     *
-    * ・メッセージをgetMessage()で取得する<br/>
-    * ・出力できない場合は標準エラー出力に出力する<br/>
-    * [ログの形式]<br/>
-    *  日時 ログのタイプ ファイル名:行番号 例外のメッセージ<br/>
-    *  Stack trace<br/>
-    *  スタックトレースの出力<br/>
+    * ・メッセージをgetMessage()で取得する<br>
+    * ・出力できない場合は標準エラー出力に出力する<br>
+    * [ログの形式]<br>
+    *  日時 ログのタイプ ファイル名:行番号 例外のメッセージ<br>
+    *  Stack trace<br>
+    *  スタックトレースの出力<br>
     *
     * @param type ログのタイプ。nullの場合はLOG.INFO
     * @param ex 例外
@@ -1024,14 +1025,14 @@ public final class Util {
     }
 
     /**
-    * 例外のメッセージを出力する<br/>
+    * 例外のメッセージを出力する<br>
     *
-    * ・getMessage()で取得してメッセージと合わせて出力する<br/>
-    * ・出力できない場合は標準エラー出力に出力する<br/>
-    * [ログの形式]<br/>
-    *  日時 ログのタイプ ファイル名:行番号 メッセージ 例外のメッセージ<br/>
-    *  Stack trace<br/>
-    *  スタックトレースの出力<br/>
+    * ・getMessage()で取得してメッセージと合わせて出力する<br>
+    * ・出力できない場合は標準エラー出力に出力する<br>
+    * [ログの形式]<br>
+    *  日時 ログのタイプ ファイル名:行番号 メッセージ 例外のメッセージ<br>
+    *  Stack trace<br>
+    *  スタックトレースの出力<br>
     *
     * @param type ログのタイプ。nullの場合はLOG.INFO
     * @param ex 例外
@@ -1051,10 +1052,10 @@ public final class Util {
     }
 
     /**
-    * LOG.INFOを指定してログを出力する<br/>
+    * LOG.INFOを指定してログを出力する<br>
     *
     * ・出力できない場合は標準エラー出力に出力する
-    * [ログの形式]<br/>
+    * [ログの形式]<br>
     *  日時 ログのタイプ ファイル名:行番号 メッセージ
     *
     * @param format 書式
@@ -1065,10 +1066,10 @@ public final class Util {
     }
 
     /**
-    * LOG.WARNINGを指定してログを出力する<br/>
+    * LOG.WARNINGを指定してログを出力する<br>
     *
     * ・出力できない場合は標準エラー出力に出力する
-    * [ログの形式]<br/>
+    * [ログの形式]<br>
     *  日時 ログのタイプ ファイル名:行番号 メッセージ
     *
     * @param format 書式
@@ -1079,10 +1080,10 @@ public final class Util {
     }
 
     /**
-    * LOG.ERRORを指定してログを出力する<br/>
+    * LOG.ERRORを指定してログを出力する<br>
     *
     * ・出力できない場合は標準エラー出力に出力する
-    * [ログの形式]<br/>
+    * [ログの形式]<br>
     *  日時 ログのタイプ ファイル名:行番号 メッセージ
     *
     * @param format 書式
@@ -1093,10 +1094,10 @@ public final class Util {
     }
 
     /**
-    * LOG.EXCEPTIONを指定してログを出力する<br/>
+    * LOG.EXCEPTIONを指定してログを出力する<br>
     *
     * ・出力できない場合は標準エラー出力に出力する
-    * [ログの形式]<br/>
+    * [ログの形式]<br>
     *  日時 ログのタイプ ファイル名:行番号 メッセージ
     *
     * @param ex 例外
@@ -1195,7 +1196,7 @@ public final class Util {
     }
 
     /**
-    * YES/NOのダイアログを表示する<br/>
+    * YES/NOのダイアログを表示する<br>
     *
     * ・select1(message, true)と同じ
     *
@@ -1221,9 +1222,9 @@ public final class Util {
     }
 
     /**
-    * YES/NO/CANCELのダイアログを表示する<br/>
+    * YES/NO/CANCELのダイアログを表示する<br>
     *
-    * ・選択結果はJOptinPaneのYES_OPTION/NO_OPTION/CANCEL_OPTIONで返す。<br/>
+    * ・選択結果はJOptinPaneのYES_OPTION/NO_OPTION/CANCEL_OPTIONで返す。<br>
     * ・select2(message, true)と同じ
     *
     * @param format 書式
@@ -1235,7 +1236,7 @@ public final class Util {
     }
 
     /**
-    * YES/NO/CANCELのダイアログを表示する<br/>
+    * YES/NO/CANCELのダイアログを表示する<br>
     *
     * ・選択結果はJOptinPaneのYES_OPTION/NO_OPTION/CANCEL_OPTIONで返す。
     *
@@ -1369,7 +1370,7 @@ public final class Util {
     }
 
     /**
-    * LOG.INFOのログを出力してメッセージを表示する<br/>
+    * LOG.INFOのログを出力してメッセージを表示する<br>
     *
     * ・JOptionPane.showMessageDialogでメッセージを表示する
     *
@@ -1382,7 +1383,7 @@ public final class Util {
     }
 
     /**
-    * LOG.WARNINGのログを出力してメッセージを表示する<br/>
+    * LOG.WARNINGのログを出力してメッセージを表示する<br>
     *
     * ・JOptionPane.showMessageDialogでメッセージを表示する
     *
@@ -1395,7 +1396,7 @@ public final class Util {
     }
 
     /**
-    * LOG.ERRORのログを出力してメッセージを表示する<br/>
+    * LOG.ERRORのログを出力してメッセージを表示する<br>
     *
     * ・JOptionPane.showMessageDialogでメッセージを表示する
     *
@@ -1408,7 +1409,7 @@ public final class Util {
     }
 
     /**
-    * LOG.EXCEPTIONのログを出力してメッセージを表示する<br/>
+    * LOG.EXCEPTIONのログを出力してメッセージを表示する<br>
     *
     * ・JOptionPane.showMessageDialogでメッセージを表示する
     *
